@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
   	<h1>登  录</h1>
-  	<font color="red">${requestScope["login.message"]}</font>
+  	<font color="red">${login_message}</font>
     <form method="post" action="login.do">
     	<table>
     		<tr>

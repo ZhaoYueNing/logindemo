@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet {
 		User user = LoginService.loginUser(u);
 		if(user==null){
 			//µÇÂ¼Ê§°Ü
-			request.setAttribute("login.message", "µÇÂ¼Ê§°Ü£¬ÇëÖØÊÔ!");
+			request.setAttribute("login_message", "µÇÂ¼Ê§°Ü£¬ÇëÖØÊÔ!");
 			request.getRequestDispatcher("/jsp/login.jsp").forward(request, response);
 		}else{
 			//µÇÂ¼³É¹¦
